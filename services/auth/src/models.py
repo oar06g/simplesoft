@@ -11,6 +11,7 @@ class User(Base):
     fullname = Column(String(255), nullable=False)
     age = Column(Integer, nullable=False)
     email = Column(String(255), unique=True, nullable=False)
+    password = Column(String(255), nullable=False)
     job_title = Column(String(255), nullable=False)
     years_of_experience = Column(Integer, nullable=False)
     is_active = Column(Boolean, default=True)
